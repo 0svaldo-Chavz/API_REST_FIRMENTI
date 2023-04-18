@@ -73,20 +73,12 @@ export const updateCategoria = async (req: Request, res: Response) => {
 export const deleteCategoria = async (req: Request, res: Response) => {
   const {idCategoria} =req.params 
   try {
-    const productos = await Producto.findAll({
-      where: { idCategoria: idCategoria}
-    })
-    console.log(productos)
-    if (productos.length === 0) {
       const categoria = await Categoria.destroy({
         where: {
           id: idCategoria,
         },
       })
       return res.status(204).json({categoria, message:`La categoria con id ${idCategoria} ha sido eliminada`})
-    }else{
-      return res.status(404).json({message: 'La  categoria tiene productos asociados. No se ha podido eliminar.'})  
-    }
   } catch (error) {
     console.log(error)
     return res.status(500).json({message: `No se ha podido eliminar la categoria con id: ${idCategoria}`})

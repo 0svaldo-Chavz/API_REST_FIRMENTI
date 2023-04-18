@@ -38,8 +38,9 @@ export const checkDeleteCategory = () => {
 
 
 const checkCategorieProducts = async (value: number) => {
-  const productos = await Producto.findAll({where: {idCategoria:value}})
-  if (!productos) {
+  const productos = await Producto.findAll({ where: { idCategoria: value } })
+  
+  if (!productos.length) {
     return Promise.resolve('OK')
   } else {
     return Promise.reject('No se puede eliminar la categoria. Aun cuenta con productos relacionados.  ')
