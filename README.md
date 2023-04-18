@@ -18,6 +18,6 @@ Abriendo una terminal de comandos y estando ubicados en una carpeta exclusiva pa
    
    Teniendo esto con ayuda del comando "npm install" podremos instalar las dependencias del paquete package.json para que podamos desplegar el proyecto.
    
-   Una vez instalado todo. Solo se requiere ejecutar "npm start" para levantar la aplicacion.
+   Una vez instalado todo. Solo se requiere ejecutar "npm run dev" para levantar la aplicacion de la API.
    
    
