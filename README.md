@@ -2,7 +2,7 @@
 
 
 
-Este proyecto ha sido desarrollado con JavaScript y una de sus librerías más reconocidas; React JS, Bootstrap y CSS.
+Este proyecto ha sido desarrollado con TypeScript, MySQL,Node JS y Express JS.
 
 Para poder clonar este repositorio es necesario contar con una cuenta de GitHub y tener instalado Git en su computadora.
 
